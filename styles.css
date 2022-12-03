@@ -1,0 +1,868 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+body {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #40514e;
+  margin: 0px;
+  text-align: center;
+  font-family: "Tiro Devanagari Marathi", serif;
+  position: relative;
+  overflow-x: none;
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------------------CUSTOM SCROLLBAR CSS--------------------------------------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0affff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  #c0c4cf;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  #c0c4cf;
+}
+
+
+
+
+h1 {
+  font-size: 5.625em; /*100%  is 16px, so for 90px font size, 90/16 = 562.5%    1em = 16px = 100%, 90px = 5.625em    */
+  margin: 50px auto 0px auto;
+  font-family: "Sacramento", cursive;
+  color: rgb(143, 9, 143);
+  line-height: 2;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #6455f1;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #11999e;
+  font-weight: bolder;
+}
+
+a {
+  color: #7743db;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eaf6f6;
+}
+
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted rgb(0, 254, 246) 6px;
+  border-bottom: none;
+  width: 5%;
+  margin: 100px auto;
+}
+
+.main-text {
+  color: #7743db;
+  font-family: "Montserrat", sans-serif;
+}
+
+.supporting-text {
+  color:  #c0c4cf;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+
+.top-container {
+  background-image: url("images/background_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img-div {
+        height: 250px;
+        margin-right: 50px;
+        margin-left: -80px;
+        overflow:visible;
+        position: relative;
+}
+
+.profile-pic {
+  height: 250px;
+  position: absolute;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%, -50%);
+}
+
+.profile-img {
+  height: 100%;
+}
+
+
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.leaf-top {
+  height: 500px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+}
+
+.leaf-bottom {
+  height: 500px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.intro {
+  width: 60%;
+  word-break: normal;
+  padding: 40px 0px 40px 0px;
+  color:  #c0c4cf;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+
+
+.middle-container {
+  background : url(images/wallpaperflare.com_wallpaper.jpg) center top no-repeat, url(images/932271.jpg) center bottom no-repeat;
+  background-repeat: no-repeat;
+  padding: 100px 0px 100px 0px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.skill-card {
+  height: 100%;
+  padding: 10px;
+}
+
+.skill-card-border{
+  height: 100%;
+  background: linear-gradient(to right, rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));
+  padding: 2px;
+  border-radius: 20px;
+}
+
+
+.skill-info{
+  height: 100%;
+  background-image: url(images/1567679.jpg);
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.skill-img {
+  height: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.skill-img-div {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-icon {
+  position: absolute;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  color: #1caa3b;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+.bottom-container {
+  position: relative;
+  background-color: rgb(4, 0, 25);
+  padding: 50px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-message {
+  
+  margin: 40px auto 60px;
+  margin-right: 40px;
+}
+
+.seperator-div {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    #1d2c3f,
+    rgb(1, 56, 25),
+    rgb(22, 33, 178)
+  );
+}
+
+.seperator-div1 {
+  width: 100%;
+  height: 4px;
+  background-color: #1d2c3f;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+
+
+/*--------------------------------------NAVBAR CSS--------------------------------------------*/
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-link {
+  color: #023d14;
+  font-size: large;
+}
+
+.nav-link:hover {
+  color: #023d14;
+}
+
+.nav-item:hover {
+  border-bottom: 1px solid #023d14;
+}
+
+.navbar {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+
+
+/*--------------------------------------HERO SECTION NEON TEXT EFECT CSS--------------------------------------------*/
+
+
+.name {
+  font-size: calc(15px + 16vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px   #0037ea, 0 0 15px   #0037ea, 0 0 20px   #0037ea,
+    0 0 40px   #0037ea, 0 0 60px #2e0249, 0 0 10px #570a57, 0 0 98px #2e0249;
+  color:  #c0c4cf;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #0c4045;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px   #0037ea, 0 0 15px   #0037ea, 0 0 20px   #0037ea,
+      0 0 40px   #0037ea, 0 0 60px #2e0249, 0 0 10px #570a57, 0 0 98px #2e0249;
+    color:  #c0c4cf;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px   #0037ea, 0 0 15px   #0037ea, 0 0 20px   #0037ea,
+      0 0 40px   #0037ea, 0 0 60px #2e0249, 0 0 10px #570a57, 0 0 98px #2e0249;
+    color:  #c0c4cf;
+  }
+}
+
+.sub-name {
+  font-size: calc(4px + 5vh);
+  line-height: calc(5px + 5vh);
+  text-shadow: 0 0 5px #c0c4cf, 0 0 15px #c0c4cf, 0 0 20px #c0c4cf,
+    0 0 40px #c0c4cf, 0 0 60px #1e0521, 0 0 10px #570a57, 0 0 98px #1e0521;
+  color: #023d14;
+  text-align: center;
+  animation: blink-2 5s infinite;
+  -webkit-animation: blink-2 5s infinite;
+}
+
+.sub-name-1 {
+  font-size: calc(4px + 5vh);
+  line-height: calc(5px + 5vh);
+  text-shadow: 0 0 5px #c0c4cf, 0 0 15px #c0c4cf, 0 0 20px #c0c4cf,
+    0 0 40px #c0c4cf, 0 0 60px #1e0521, 0 0 10px #570a57, 0 0 98px #1e0521;
+  color: #023d14;
+  text-align: center;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.sub-name-2 {
+        font-size: calc(4px + 5vh);
+        line-height: calc(5px + 5vh);
+        text-shadow: 0 0 5px #c0c4cf, 0 0 15px #c0c4cf, 0 0 20px #c0c4cf,
+          0 0 40px #c0c4cf, 0 0 60px #1e0521, 0 0 10px #570a57, 0 0 98px #1e0521;
+        color: #023d14;
+        text-align: center;
+        text-align: left;
+        padding-left: 400px;
+      }
+
+@-webkit-keyframes blink-2 {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #c0c4cf, 0 0 15px #c0c4cf, 0 0 20px #c0c4cf,
+      0 0 40px #c0c4cf, 0 0 60px #1e0521, 0 0 10px #570a57, 0 0 98px #1e0521;
+    color: #023d14;
+  }
+}
+
+@keyframes blink-2 {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #c0c4cf, 0 0 15px #c0c4cf, 0 0 20px #c0c4cf,
+      0 0 40px #c0c4cf, 0 0 60px #1e0521, 0 0 10px #570a57, 0 0 98px #1e0521;
+    color: #023d14;
+  }
+}
+
+
+/*--------------------------------------INFO SECTION NEON TEXT EFFECT CSS--------------------------------------------*/
+
+
+.flux {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #426dfb;
+  font-size: 50px;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #2356ff;
+}
+
+
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #044b22, 0 0 3vw #044b22, 0 0 10vw #044b22,
+      0 0 10vw #044b22, 0 0 0.4vw #8bfdfe, 0.5vw 0.5vw 0.1vw #147280;
+    color: #28d7fe;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #044b22, 0 0 1.5vw #044b22, 0 0 5vw #044b22,
+      0 0 5vw #044b22, 0 0 0.2vw #044b22, 0.5vw 0.5vw 0.1vw #0a3940;
+    color: #146c80;
+  }
+}
+
+
+
+/*--------------------------------------NEON BUTTON EFFECT CSS--------------------------------------------*/
+
+
+
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+
+
+
+@media (max-width: 1250px) {
+  .navbar {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+  }
+
+
+  .profile-pic {
+    height: 180px;
+    position: absolute;
+    top: 50%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+  
+    transform: translate(-50%, -50%);
+  }
+  
+  .profile-img {
+    height: 100%;
+  }
+  
+  .profile-img-div {
+    height: 300px;
+    margin-right: -80px;
+    margin-left: -80px;
+    margin-bottom: -50px;
+    overflow: visible;
+    position: relative;
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  .opener-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .name {
+    font-size: calc(15px + 16vh);
+    line-height: calc(20px + 20vh);
+    text-shadow: 0 0 5px   #0037ea, 0 0 15px   #0037ea, 0 0 20px   #0037ea,
+      0 0 40px   #0037ea, 0 0 60px #2e0249, 0 0 10px #570a57, 0 0 98px #2e0249;
+    color:  #c0c4cf;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+  }
+
+  .sub-name-1 {
+    font-size: calc(4px + 5vh);
+    line-height: calc(5px + 5vh);
+    text-shadow: 0 0 5px #c0c4cf, 0 0 15px #c0c4cf, 0 0 20px #c0c4cf,
+      0 0 40px #c0c4cf, 0 0 60px #1e0521, 0 0 10px #570a57, 0 0 98px #1e0521;
+    color: #023d14;
+    text-align: center;
+    text-align: left;
+    padding-left: 0px;
+  }
+
+}
+
+@media (max-width: 995px) {
+
+  hr {
+    border: dotted rgb(0, 254, 246) 6px;
+    border-bottom: none;
+    width: 5%;
+    margin: 60px auto;
+  }
+
+  .leaf-top {
+    height: 300px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+  }
+  
+  .leaf-bottom {
+    height: 300px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .nav-link {
+    color:  #c0c4cf;
+    font-size: medium;
+  }
+
+  .flux {
+    font-family: neon;
+    color: #044b22;
+    font-size: 30px;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #2356ff;
+  }
+
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    
+  }
+
+  .supporting-text {
+    color:  #c0c4cf;
+    font-family: "Montserrat", sans-serif;
+    font-size: small;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+  }
+
+  .skill-card {
+    height: 100%;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+  }
+}
+
+
+@media  (max-width: 768px)  {
+  #nav_bar{
+    display: none;
+  }
+
+  .bottom-container {
+    position: relative;
+    background-color: rgb(4, 0, 25);
+    padding: 20px 0px 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .socials{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  hr {
+    border: dotted rgb(0, 254, 246) 6px;
+    border-bottom: none;
+    width: 5%;
+    margin: 60px auto;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+  }
+
+  .skill-card {
+    height: 100%;
+    padding: 10px 5px;
+  }
+
+  .intro {
+    width: 60%;
+    word-break: normal;
+    padding: 40px 0px 40px 0px;
+    color:  #c0c4cf;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+
+  .name {
+    font-size: calc(8px + 10vh);
+    line-height: calc(20px + 20vh);
+    text-shadow: 0 0 5px   #0037ea, 0 0 15px   #0037ea, 0 0 20px   #0037ea,
+      0 0 40px   #0037ea, 0 0 60px #2e0249, 0 0 10px #570a57, 0 0 98px #2e0249;
+    color:  #c0c4cf;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+  }
+
+  .sub-name-1 {
+    font-size: calc(3px + 4vh);
+    line-height: calc(1px + 1vh);
+    text-shadow: 0 0 5px #c0c4cf, 0 0 15px #c0c4cf, 0 0 20px #c0c4cf,
+      0 0 40px #c0c4cf, 0 0 60px #1e0521, 0 0 10px #570a57, 0 0 98px #1e0521;
+    color: #023d14;
+    text-align: center;
+    text-align: left;
+    padding-left: 0px;
+  }
+
+  .sub-name {
+    font-size: calc(3px + 4vh);
+    line-height: calc(1px + 1vh);
+    text-shadow: 0 0 5px #c0c4cf, 0 0 15px #c0c4cf, 0 0 20px #c0c4cf,
+      0 0 40px #c0c4cf, 0 0 60px #1e0521, 0 0 10px #570a57, 0 0 98px #1e0521;
+    color: #023d14;
+    text-align: center;
+    text-align: left;
+    padding-left: 0px;
+  }
+}
+
+
+@media (max-width: 510px) {
+  .leaf-top {
+    height: 250px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+  }
+  
+  .leaf-bottom {
+    height: 250px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .contact-header {
+     padding: 30px 30px 0px 30px;
+}
+
+hr {
+  border: dotted rgb(0, 254, 246) 6px;
+  border-bottom: none;
+  width: 5%;
+  margin: 60px auto;
+}
+}
+
+
